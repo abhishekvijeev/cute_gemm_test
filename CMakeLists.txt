@@ -17,5 +17,6 @@ target_include_directories(main PUBLIC
     ./cutlass/tools/util/include
     ./cutlass/tools/library/include
     ./cutlass/examples/common
+    ./cutlass/cute
     ${CUDA_INCLUDE_DIRS}
 )
