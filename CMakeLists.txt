@@ -8,6 +8,8 @@ set(CMAKE_CUDA_ARCHITECTURES "80")
 
 enable_language(CUDA)
 
+add_subdirectory(./cutlass)
+
 add_executable(main
     src/main.cu
 )
@@ -17,6 +19,5 @@ target_include_directories(main PUBLIC
     ./cutlass/tools/util/include
     ./cutlass/tools/library/include
     ./cutlass/examples/common
-    ./cutlass/cute
     ${CUDA_INCLUDE_DIRS}
 )
